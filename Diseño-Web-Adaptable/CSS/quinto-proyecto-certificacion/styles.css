@@ -23,7 +23,7 @@ body {
   color: var(--fontcolor);
   font-family: "Palatino Linotype", Tahoma, serif;
   display: grid;
-  grid-template-columns: 2.5fr 95fr 2.5fr;
+  grid-template-columns: minmax(1rem, 2.5fr) 95fr minmax(1rem, 2.5fr);
   grid-template-rows: auto;
   width: 100%;
   max-width: 1400px;
