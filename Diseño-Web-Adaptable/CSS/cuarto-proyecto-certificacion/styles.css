@@ -107,7 +107,7 @@ li {
     overflow: auto;
   }
 
-  html {
+  html, main {
     scroll-padding-top: 20vh;
     scroll-behavior: smooth;
   }
