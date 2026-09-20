@@ -23,7 +23,7 @@ body {
   color: var(--fontcolor);
   font-family: "Palatino Linotype", Tahoma, serif;
   display: grid;
-  grid-template-columns: minmax(1rem, 2.5fr) 95fr minmax(1rem, 2.5fr);
+  grid-template-columns: minmax(1rem, 2.5fr) minmax(0, 95fr) minmax(1rem, 2.5fr);
   grid-template-rows: auto;
   max-width: 1400px;
   margin: 0 auto;
@@ -150,7 +150,7 @@ h1 {
 
 #pricing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%) 1fr));
   gap: 1.5rem;
   margin: 2rem auto;
   width: 100%;
