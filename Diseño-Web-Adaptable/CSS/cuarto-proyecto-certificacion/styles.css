@@ -86,11 +86,6 @@ li {
   }
 }
 
-@media (max-width: 320px) {
-  html {
-    font-size: 22px;
-  }
-}
 
 
 
