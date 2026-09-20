@@ -1,0 +1,129 @@
+body {
+  background-color: hsl(248 39% 39%);
+  font-family: tahoma, sans-serif;
+}
+
+main {
+  background-color: hsl(248 80% 90%);
+  border: 1px solid hsl(248 80% 90%);
+  border-radius: 15px;
+  width: 95%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 0 1rem;
+  box-shadow: 0 0 15px 5px hsl(248 39% 0%);
+  overflow: auto;
+}
+
+h1 {
+  margin: 1rem auto;
+  text-align: center;
+  border-bottom: 2px double hsla(248, 39%, 39%, 0.4);
+  width: 50%;
+}
+
+table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.data {
+  background-color: hsl(248, 39%, 0%);
+  width: 100%;
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.data th:first-of-type {
+  border-radius: 8px 0 0 0;
+}
+
+.data th:last-of-type {
+  border-radius: 0 8px 0 0;
+}
+
+#last td:first-of-type {
+  border-radius: 0 0 0 8px;
+}
+
+#last td:last-of-type {
+  border-radius: 0 0 8px 0;
+}
+
+td {
+  padding: 0 .5em;
+}
+
+.read, .to-read, .in-progress {
+  height: 3em;
+  text-align: center;
+  transition: all .3s ease-in;
+}
+
+.read:hover, .to-read:hover, .in-progress:hover {
+  transform: scale(1.03);
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(hsl(84, 100%, 90%) 10%, hsl(100, 100%, 60%) 80%, hsl(84, 100%, 30%) 95%);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(hsl(33, 15%, 90%) 10%, hsl(33, 15%, 60%) 80%, hsl(33, 15%, 30%) 95%);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(hsl(54, 100%, 90%) 10%, hsl(54, 100%, 60%) 80%, hsl(54, 100%, 30%) 95%);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] span[class="status"] {
+  background-image: linear-gradient(white 5%, springgreen 90%, green 95%);
+  border: 1px solid springgreen;
+  border-radius: 5px;
+}
+
+tr[class="to-read"] span[class="status"] {
+  background-image: linear-gradient(white 5%, indianred 90%, red 95%);
+  border: 1px solid indianred;
+  border-radius: 5px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  background-image: linear-gradient(white 5%, yellow 90%, gold 95%);
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+span[class="status"], span[class^="rate"] {
+  height: 50%;
+  width: 100%;
+  padding: 0.5em 0.5em;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid gray;
+  border-radius: 1%;
+  margin: 0 .3em;
+  height: 1em;
+  width: 1em;
+  background-color: gray;
+  transform: rotate(45deg);
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(white 5%, yellow 90%, gold 95%);
+}
+
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(white 5%, yellow 90%, gold 95%);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(white 5%, yellow 90%, gold 95%);
+}

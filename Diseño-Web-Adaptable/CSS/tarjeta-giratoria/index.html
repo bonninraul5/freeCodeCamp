@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+  .contenedor {
+    perspective: 1000px; /* le da profundidad 3D a la escena */
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+  }
+
+  .tarjeta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* permite que las caras vivan en 3D */
+    transition: transform .3s;
+  }
+
+  #girar-check:checked ~ .tarjeta {
+    transform: rotateY(180deg);
+  }
+
+  #girar-check {
+    display: none;
+  }
+
+  .girar {
+    cursor: pointer;
+    font-family: sans-serif;
+    text-decoration: underline;
+  }
+
+  .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* oculta la cara de atrás cuando no se ve */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 0 0 15px 5px black;
+  }
+
+  .frente {
+    background: #2b6cb0;
+  }
+
+  .reverso {
+    background: #2f855a;
+    transform: rotateY(180deg); /* ya arranca "dada vuelta" */
+  }
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+  <input type="checkbox" id="girar-check"/>
+  <div class="tarjeta">
+    <div class="cara frente"><p>Crear cuenta</p><label for="girar-check" class="girar">Girar</label></div>
+    <div class="cara reverso"><p>Loguear</p><label for="girar-check" class="girar">Girar</label></div>
+  
+  </div>
+  
+</div>
+
+</body>
+</html>

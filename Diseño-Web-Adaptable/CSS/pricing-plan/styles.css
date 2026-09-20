@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: tahoma, arial;
+  background-color: #ffffef;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+p {
+  margin: 0 auto 10px;
+  border-bottom: 2px solid black;
+  padding-bottom: 3px;
+  width: 60%
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 10px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 5px;
+
+}
+
+a {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: hsl(50 100% 50%);
+  width: 50%;
+  margin: 0 auto 10px;
+  text-decoration: none;
+  height: 2em;
+  line-height: 2em;
+  color: black;
+  font-weight: 900;
+}
+
+.pricing-container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 75%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffdf;
+  box-shadow: 0 0 5px 1px #000;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.pricing-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  font-size: 0.7rem;
+  max-width: 250px;
+  background-color: rgba(153, 153, 153, .2); 
+}
+
+.pricing-card:hover {
+  transition: transform 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+  background-color: lightblue;
+}
+
+.premium-plan {
+  order: 2;
+}
+
+li:nth-child(1)::before,li:nth-child(2)::before,.pro li:nth-child(3)::before,.premium li:nth-child(3)::before,.pro li:nth-child(4)::before,.premium li:nth-child(4)::before,.premium li:nth-child(5)::before {
+  content: "✓";
+  font-weight: bold;
+  color: green;
+  margin-right: 5px;
+}
+
+.basic li:nth-child(3)::before, .basic li:nth-child(4)::before, .basic li:nth-child(5)::before, .pro li:nth-child(5)::before {
+  content: "✗";
+  font-weight: bold;
+  color: red;
+  margin-right: 5px;
+}

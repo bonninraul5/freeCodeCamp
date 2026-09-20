@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+   <h1 id="title">Formulario de Encuesta de freeCodeCamp</h1>
+   <p id="description">Gracias por tomarse su tiempo para ayudarnos a mejorar.</p>
+   <form action="" id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input required id="name" type="text" placeholder="Enter your name"/><br/>
+    <label id="email-label" for="email">Email</label>
+    <input required id="email" type="email" placeholder="Enter your email"/><br/>
+    <label id="number-label" for="number">Age (optional)</label>
+    <input id="number" type="number" placeholder="Age" min="18" max="100"/><br/>
+    <p id="ocupation">¿Cuál es tu ocupación actual?</p>
+    <select id="dropdown" >
+      <option selected disabled>Seleccione una opción</option>
+      <option>Estudiante</option>
+      <option>Trabajador</option>
+    </select>
+    <p id="recomendation">¿Recomendarías freecodecamp a un amigo?</p>
+    <label for="si">Sí</label>
+    <input id="si" type="radio" name="name" value="si" checked>
+    <label for="no">No</label>
+    <input id="no" type="radio" name="name" value="no">
+    <label for="quizas">Quizás</label>
+    <input id="quizas" type="radio" name="name" value="quizas">
+
+    <p id="feature">¿Cuás es tu característica favorita de freeCodeCamp?</p>
+
+    <select id="dropdown2" >
+      <option selected disabled>Seleccione una opción</option>
+      <option>Opción 1</option>
+      <option>Opción 2</option>
+    </select>
+
+    <p id="mejoras">¿Qué te gustaría que mejoremos? (Marca todas las que apliquen)</p>
+    <label for="option1">Opción 1</label>
+    <input id="option1" type="checkbox" name="option1" value="option1">
+
+    <label for="option2">Opción 2</label>
+    <input id="option2" type="checkbox" name="option2" value="option2">
+
+    <label for="option3">Opción 3</label>
+    <input id="option3" type="checkbox" name="option3" value="option3">
+
+    <label for="option4">Opción 4</label>
+    <input id="option4" type="checkbox" name="option4" value="option4">
+
+    <label for="option5">Opción 5</label>
+    <input id="option5" type="checkbox" name="option5" value="option5">
+
+    <label for="option6">Opción 6</label>
+    <input id="option6" type="checkbox" name="option6" value="option6">
+
+    <label for="option7">Opción 7</label>
+    <input id="option7" type="checkbox" name="option7" value="option7"><br/>
+
+    <p id="sugerencias">¿Algún comentario o sugerencia?</p>
+        <textarea cols="30" rows="5" name="comments" id="comments" placeholder="Deja aquí tus comentarios..."></textarea><br/>
+    <button id="submit" type="submit">Submit</button>
+   </form>
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(165deg, orange,purple, green);
+  text-align:center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  min-height: calc(100vh - 100px);
+  font-family: Tahoma, sans-serif;
+  color: white;
+}
+
+
+
+.header-img {
+  max-width: 60%;
+  border: 3px solid orange;
+  border-radius: 20px;
+  box-shadow: 5px 0 15px black;
+
+}
+
+.event-info {
+  display: inline;
+}
+
+.address {
+  display: inline;
+  font-style: normal;
+}
+
+section {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+hr {
+  width: 95%;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 90%;
+    display: block;    /* apila una debajo de la otra */
+      }
+}

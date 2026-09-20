@@ -1,0 +1,91 @@
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  font-family: Electrolize, sans-serif, Tahoma;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 100vh;
+  min-width: 200px;
+  border-right: 3px solid gray;
+  background-color: #fff;
+  overflow: auto;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 15px 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 10px 10px 0;
+  border-top: 2px solid gray;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 100vh;
+  overflow: auto;
+  padding-left: 1px;
+  font-size: 1em;
+}
+
+p {
+  text-align: left;
+  padding: 0 1em 1em;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  font-size: 1em;
+  padding: 0 1em 1em 2em;
+}
+
+.code-container {
+  background-color: rgba(123, 123, 123, 0.1);
+  font-size: 1em;
+  padding: 1em;
+  margin: 0 2em 1em 2em;
+}
+
+@media (min-width: 1025px) {
+  #navbar {
+    position: fixed;
+    left: 0;
+    top:0;
+  }
+
+  main {
+    margin-left: 30vw;
+  }
+}
+
+
+
+
