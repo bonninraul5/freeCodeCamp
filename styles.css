@@ -296,7 +296,7 @@ h2 {
 }
 
 .contact-btn {
-    width: auto;
+    width: 9rem;
     padding: 0 .5rem;
     background-color: var(--mainstress);
     height: 2rem;
